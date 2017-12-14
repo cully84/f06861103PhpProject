@@ -1,0 +1,80 @@
+<!DOCTYPE html> <!------------ open html document-------------->
+<head> <!------------ open head-------------->
+    <title>Titan Fitness</title>  <!------------ title of page-------------->
+    <!------------ open style-------------->
+    <style>
+        @import "../css/nav.css";
+        @import "../css/header.css";
+        @import "../css/layout.css";
+        @import "../css/footer.css";
+    </style> <!------------ end style-------------->
+
+</head>
+<!------------end head-------------->
+<!------------ open body-------------->
+<body>
+
+<!---------declaring section called header------------>
+<header>
+    <img src="../images/logo.jpg" width="150" height="130" alt="logo" />
+    <h1> Titan Fitness</h1>
+</header>
+
+<!--------declaring section called nav------------->
+<!---------------relative links:links to other pages within the site)-------------->
+<!-------------open unordered list------------------------->
+<nav>
+    <ul>
+        <li><a href="index.html.twig">Home</a></li>
+        <li><a href="about.html.twig">About</a></li>
+        <li><a href="" class="current_page">Nutrition</a></li>
+        <li><a href="fitness.html.twig">Fitness</a></li>
+        <li><a href="login.html.twig">Login</a></li>
+        <li><a href="contact.html.twig">Contact</a></li>
+    </ul>
+</nav>
+<!-----------------end UL--------------------------------------------->
+<!------------------------- end nav -------------------------------->
+
+
+<!---------------------open section recipe----------------->
+<div class="column_container">
+    <section class="leftside">
+
+        <h2> Delicious Recipes, Nutrional Information and much more!! </h2>
+
+        <ol class="dropdown">
+            <li><a href="../nutrition/overview.html.twig">Overview</a></li> <br>
+            <img src="../images/food.jpg" alt="food pyramid" width="150" height="150" border="0">
+            <li><a href="../nutrition/recipes/strawberryshake.html.twig">Strawberry Sunrise Smoothie</a></li> <br>
+            <img src="../images/smoothie.jpg" alt="pic of smoothie" width="150" height="150" border="0">
+            <li><a href="../nutrition/recipes/cajunturkey.html.twig">Cajun Turkey Medallions</a></li> <br>
+            <img src="../images/cajun%20turkey%20medallions.jpg" alt="pic of turkey medallions" width="150" height="150" border="0">
+            <li><a href="../nutrition/recipes/proteinbars.html.twig">Homemade Protein Bars</a></li> <br>
+            <img src="../images/protein%20bars.jpg" alt="pic of bars" width="150" height="150" border="0">
+
+        </ol>
+
+    </section>
+
+    <!------------ imported image source-------------->
+    <section class="photo">
+
+        <iframe src="http://www.youtube.com/embed/cKRf53I737E"
+                width="560" height="315" frameborder="0" allowfullscreen></iframe>
+
+        <h3>Nutrition is the process of consuming, absorbing, and using nutrients needed by the body for growth,
+            development, and maintenance of life.<br><br>
+
+            To receive adequate, appropriate nutrition, people need to consume a healthy diet, which consists of a variety
+            of nutrients—the substances in foods that nourish the body. A healthy diet enables people to maintain a desirable
+            body weight and composition (the percentage of fat and muscle in the body) and to do their daily physical and mental activities.<br><br>
+
+            If people consume too much food, obesity may result. If they consume large amounts of certain nutrients, usually vitamins or minerals,
+            harmful effects (toxicity) may occur. If people do not consume enough nutrients, a nutritional deficiency disorder may result</h3>
+
+
+    </section>
+</div>
+
+{% end block %}

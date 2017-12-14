@@ -1,0 +1,39 @@
+{% extends 'template.html.twig.twig' %}
+
+{% block main %}
+
+
+<hr>
+
+    <h1></h1>
+
+    <form
+            method="post"
+            action="index.php"
+    >
+        <input type="hidden" name="action" value="processProductUpdate">
+
+        Id:
+        <input type="text"
+               name="id"
+               value="{{ product.id }}"
+               readonly
+        >
+        <p>
+            description:
+            <input type="text"
+                   name="description"
+                   value="{{ product.description }}">
+        </p>
+        <p>
+            price:
+            <input type="text"
+                   name="price"
+                   value="{{ product.price }}">
+        </p>
+
+        <input type="submit" value="UPDATE">
+    </form>
+
+    <hr>
+{% end block %}

@@ -1,0 +1,56 @@
+{% extends 'template.html.twig.twig' %}
+
+{% block main %}
+
+    <!---------------------open section leftside----------------->
+<div class="column_container">
+    <section class="leftside">
+
+        <h2> Delicious Recipes, Nutrional Information and much more!! </h2>
+
+        <ol class="dropdown">
+            <li><a href="../overview.html.twig">Overview</a></li> <br>
+            <img src="../../images/food.jpg" alt="food pyramid" width="150" height="150" border="0">
+            <li><a href="cajunturkey.html.twig">Cajun Turkey</a></li> <br>
+            <img src="../../images/cajun turkey medallions.jpg" alt="pic of turkey medallions" width="150" height="150" border="0">
+            <li><a href="proteinbars.html.twig">Protein Bars</a></li> <br>
+            <img src="../../images/protein bars.jpg" alt="pic of bars" width="150" height="150" border="0">
+
+        </ol>
+
+    </section>
+
+    <!------------ imported image source-------------->
+    <section class="photo">
+
+        <h2>
+            Sunshine Strawberry Shake
+        </h2>
+
+        <p> Start your day with this nutritiously delicious smoothie </p>
+
+        <p>
+
+        <h3>Ingredients</h3>
+        <ul>
+            <li> 300ml un-concentrated orange juice</li>
+            <li> 1 tbsp honey</li>
+            <li> 8 frozen organic strawberies</li>
+            <li> 4 tbsp plain frozen yogurt </li>
+        </ul>
+        </p>
+
+        <p>
+        <h3>Directions </h3>
+        <ol>
+            <li> In a blender, place all your ingredients.</li>
+            <li> Blend till smooth.</li>
+            <li> Pour into glass and serve immediately</li>
+        </ol>
+        </p>
+
+        <img src="../../images/smoothie.jpg" width="300" height="265" alt="pic of drink">
+    </section>
+</div>
+
+{% end block %}

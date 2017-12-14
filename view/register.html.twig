@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!------------ open style-------------->
+    <style>
+        @import "../css/nav.css";
+        @import "../css/footer.css";
+        @import "../css/header.css";
+        @import "../css/layout.css";
+    </style> <!------------ end style-------------->
+</head>
+<body>
+<!---------declaring section called header------------>
+<header>
+    <img src="../images/logo.jpg" width="150" height="130" alt="logo">
+    <h1> Titan Fitness</h1>
+</header>
+<!--------declaring section called nav------------->
+<!---------------relative links:links to other pages within the site)-------------->
+<!-------------open unordered list------------------------->
+<nav>
+    <ul>
+        <li><a href="index.html.twig">Home</a></li>
+        <li><a href="about.html.twig">About</a></li>
+        <li><a href="nutrition.html.twig">Nutrition</a></li>
+        <li><a href="fitness.html.twig">Fitness</a></li>
+        <li><a href="login.html.twig" class="current_page">login</a></li>
+        <li><a href="contact.html.twig">Contact</a></li>
+    </ul>
+</nav>
+<!-----------------end UL--------------------------------------------->
+<!------------------------- end nav -------------------------------->
+<form>
+<fieldset>
+
+    <form action = regform.php method = "post">
+        <legend>Register</legend>legend>
+        Please enter your name<br>
+        <input type ="name" name="name" required>
+        <br><br>
+        Please enter your email address<br>
+        <input type ="email" name="user email" required>
+        <br><br>
+        Please enter your password(min 8 characters)<br>
+        <input type ="password" name="password" required><br><br>
+        <div id = "button2">
+                <input type="submit" id = "submit" value = "submit">
+
+            </fieldset>
+        </div>
+
+<fieldset>
+
+    <legend>Login</legend>
+    <form action = login.php method = "post">
+    <br>
+        <label for = "name" >Username: </label><br>
+        <input type ="text" name="name" id = "name">
+        <br>
+        <br>
+        <label for = "password"> Password: </label><br>
+        <br><br>
+        <div id = "button">
+            <input type ="submit" id = "submit" value="submit" >
+        </div>
+</fieldset>
+
+<br>
+<br>
+<br>
+</form>
+{% end block %}

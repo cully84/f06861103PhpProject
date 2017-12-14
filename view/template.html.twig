@@ -1,0 +1,54 @@
+<!DOCTYPE html> <!------------ open html document-------------->
+<head> <!------------ open head-------------->
+    <title>{{pageTitle}}</title>  <!------------ title of page-------------->
+    <!------------ open style-------------->
+    <style>
+        @import "../css/nav.css";
+        @import "../css/footer.css";
+        @import "../css/header.css";
+        @import "../css/layout.css";
+    </style> <!------------ end style-------------->
+
+</head>
+<!------------end head-------------->
+<!------------ open body-------------->
+<body>
+
+<!---------declaring section called header------------>
+<header>
+    <img src="../images/logo.jpg" width="150" height="130" alt="logo">
+    <h1> {{ Titan Fitness }} </h1>
+</header>
+
+<!--------declaring section called nav------------->
+<!---------------relative links:links to other pages within the site)-------------->
+<!-------------open unordered list------------------------->
+<nav>
+    <ul>
+        <li><a href="index.php?action=index" class="current_page">Home</a></li>
+        <li><a href="index.php?action=about">About</a></li>
+        <li><a href="index.php?action=Nutrition">Nutrition</a></li>
+        <li><a href="index.php?action=Fitness">Fitness</a></li>
+        <li><a href="index.php?action=Login">Login</a></li>
+        <li><a href="index.php?action=Contact">Contact</a></li>
+        <li><a href="index.php?action=Register">Register</a></li>
+    </ul>
+</nav>
+<!-----------------end UL--------------------------------------------->
+
+{% block main %}
+
+{% endblock %}
+
+
+
+<!------------------------- end nav -------------------------------->
+<!---------footer------------>
+<footer>
+    Copyright @ Titan Fitness 2016
+</footer>
+<!---------end section footer----------->
+
+</body> <!------------ end body-------------->
+
+</html> <!------------ end HTML-------------->

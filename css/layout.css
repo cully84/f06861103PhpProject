@@ -1,0 +1,27 @@
+.column_container{
+	display: flex;
+}
+
+.column_container header{
+	flex: 1;
+	background-color:#d2d2e0;
+	border: 0.1rem solid;
+	padding: 1rem;
+}
+
+.column_container section{
+	flex: 1;
+	background-color: #d2d2e0;
+	border: 0.1rem solid;
+	padding: 1rem;
+}
+
+.column_container section.photo {
+	text-align: center;
+}
+
+
+
+h1{
+	font-size: 40px
+}

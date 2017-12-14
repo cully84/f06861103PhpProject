@@ -1,0 +1,11 @@
+footer{
+	display: flex;
+	border-top: 0.5rem solid;
+	padding: i rem;
+	background-color: #d2d2e0;
+}
+
+footer{
+	flex: 1;
+}
+

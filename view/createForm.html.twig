@@ -1,0 +1,24 @@
+{% extends 'template.html.twig.twig' %}
+
+{% block main %}
+
+
+<form action="confirm.html" method="post">
+        <fieldset>
+            <legend>
+                Guest account creation form:
+            </legend>
+            <br>
+            Username: <input type="text" Size="20" MaxLenght="20" name="Username:" id="Username:" required autofocus>
+            <br>
+            Password:  <input type="password" Size="20" MaxLenght="20" name="Password:" id="Password:" required>
+            <br>
+            <div class="buttons">
+                <p>
+                    <input type="submit" Value="Create Account">
+                    <input type="Reset"  Value="Reset Details">
+                </p>
+            </div>
+        </fieldset>
+    </form>
+{% end block %}

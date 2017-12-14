@@ -1,0 +1,31 @@
+{% extends 'template.html.twig.twig' %}
+
+{% block main %}
+
+    <!---------------------open section recipe----------------->
+<div class="column_container">
+    <section class="leftside">
+
+        <h2> Delicious Recipes, Nutrional Information and much more!! </h2>
+
+        <ol class="dropdown">
+            <li><a href="blog/roleofprotein.html">Role of Protein</a></li> <br>
+            <img src="../images/roleofprotein.png" alt="" width="200" height="200" border="0">
+            <li><a href="blog/musclegrowth.html">3 Factors of Muscle Growth</a></li> <br>
+            <img src="../images/muscle.jpg" width="200" height="200" alt="pic of 2 arms" />
+
+        </ol>
+
+    </section>
+
+    <!------------ imported image source-------------->
+    <section class="photo">
+        <h2>Why Do We Need Protein?</h2>
+
+        <iframe src="http://www.youtube.com/embed/oRN17s50xFk"
+                width="560" height="315" frameborder="0" allowfullscreen></iframe>
+
+
+    </section>
+</div>
+    {% end block %}
